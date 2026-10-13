@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Données consultées, usages, stockage local, conservation et retrait des accès de Trésorerie GCC.">
+  <title>Trésorerie GCC — Confidentialité</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header><div class="wrap nav"><a class="brand" href="index.html">Trésorerie GCC</a><nav aria-label="Navigation principale"><a href="index.html">Présentation</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="conditions.html">Conditions d’utilisation</a></nav></div></header>
+  <main class="wrap" id="contenu">
+
+    <div class="hero"><p class="eyebrow">GCC Holding</p><h1>Confidentialité et accès aux données</h1><p class="lead">Le collecteur consulte les sources autorisées pour préparer des changements à vérifier. Les contenus et données de travail restent dans l’installation locale ; les jetons des comptes sont protégés séparément par Windows.</p><p class="meta">Version du 12 octobre 2026. Cette notice décrit une application locale à usage privé.</p></div>
+    <nav class="contents" aria-label="Sommaire"><a href="#donnees">Données lues</a><a href="#usages">Usages</a><a href="#stockage">Stockage</a><a href="#conservation">Conservation</a><a href="#retrait">Retrait et effacement</a><a href="#contact">Contact</a></nav>
+    <section class="panel" id="donnees">
+      <h2>1. Sources et permissions</h2>
+      <p>Chaque connexion nécessite le consentement du compte concerné pour cette application. Une autorisation accordée à un autre logiciel ne vaut pas autorisation ici. Le collecteur vérifie que le compte autorisé correspond au compte attendu.</p>
+      <div class="table-wrap"><table><caption>Accès Google en lecture, selon les sources sélectionnées</caption><thead><tr><th scope="col">Source et permission</th><th scope="col">Données consultées</th><th scope="col">Périmètre et limites</th></tr></thead><tbody>
+        <tr><td><strong>Gmail</strong><br><code>gmail.readonly</code></td><td>Expéditeurs, destinataires, dates, objets, corps des messages, identifiants de messages et de fils, pièces jointes. Reçus, envoyés, brouillons et fils associés sont distingués.</td><td>Les recherches peuvent inclure les archives, les indésirables et la corbeille. Les limites de passe, de taille, de décodage et d’accès peuvent laisser des éléments en attente.</td></tr>
+        <tr><td><strong>Google Drive</strong><br><code>drive.readonly</code></td><td>Métadonnées, versions, liens, contenu téléchargeable et exports des documents, feuilles et présentations pris en charge.</td><td>Les Drives partagés nécessitent une configuration explicite. Des droits manquants, tailles limites, raccourcis ou formats non pris en charge peuvent empêcher la lecture. Tous les commentaires et historiques de révision ne sont pas exportés.</td></tr>
+        <tr><td><strong>Google Agenda</strong><br><code>calendar.readonly</code></td><td>Informations des événements des agendas configurés : titres, dates, descriptions, identifiants et statuts utiles au suivi d’échéances.</td><td>Les agendas et la fenêtre de lecture dépendent de la configuration. Un événement ne prouve ni un encaissement ni un règlement.</td></tr>
+      </tbody></table></div>
+      <p>Ces accès autorisent la lecture. Ils ne donnent pas au collecteur le droit d’envoyer un message, de modifier un fichier ou d’écrire dans un agenda. Les informations de profil strictement nécessaires à la vérification du compte sont consultées par une API couverte par les permissions accordées.</p>
+      <p><strong>Microsoft direct.</strong> Outlook, OneDrive et Outlook Agenda utilisent leurs propres permissions en lecture, uniquement après enregistrement, configuration et consentement du compte. La présence de cette notice ou d’une connexion Google ne signifie pas que Microsoft est raccordé.</p>
+      <p><strong>Autres sources locales.</strong> Les dossiers choisis peuvent contenir des fichiers synchronisés par OneDrive ou Dropbox, des messages enregistrés, des exports WhatsApp et des notes. Le lecteur de dossiers consulte les fichiers présents sur l’ordinateur ; il ne se connecte pas directement à Dropbox ou WhatsApp. Un mode distinct peut lire une session Outlook classique déjà ouverte, avec une couverture limitée aux dossiers sélectionnés ; il ne prouve pas un accès Microsoft direct.</p>
+    </section>
+    <section class="panel" id="usages">
+      <h2>2. Utilisation des informations</h2>
+      <p>Les données servent à extraire du texte et des références, identifier et rapprocher les documents, conserver les preuves de lecture et proposer des mises à jour. Après validation, les informations retenues alimentent les opérations, prévisions et propositions de trésorerie de l’installation.</p>
+      <p>Le collecteur ne modifie pas seul un solde, une opération, une priorité ou un échéancier financier validé. Les informations incertaines doivent être examinées avant de servir à un engagement. Les réponses préparées restent des brouillons ; la collecte n’envoie aucun message.</p>
+      <p>Les données obtenues par les API Google ne sont ni vendues, ni utilisées pour la publicité ou l’évaluation de la solvabilité de tiers. Le collecteur natif ne les transmet pas à un service d’intelligence artificielle externe pour traitement ou entraînement. Leur utilisation est limitée aux fonctions décrites ici et soumise à la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">politique Google sur les données utilisateur des API</a>, notamment ses restrictions d’utilisation limitée (« Limited Use »).</p>
+      <p>L’accès à des contenus pour une intervention de maintenance doit être autorisé par l’utilisateur. Si l’utilisateur transmet lui-même des pièces ou extraits à Codex ou à un autre service, cette transmission est distincte du collecteur natif et relève aussi des règles du service choisi.</p>
+    </section>
+    <section class="panel" id="stockage">
+      <h2>3. Stockage et transmissions</h2>
+      <p><strong>Documents et données en clair.</strong> Les textes extraits, métadonnées, propositions, index, pièces, données financières, historiques et sauvegardes sont conservés localement. L’application ne chiffre pas elle-même l’ensemble de ces fichiers. Leur protection dépend des accès Windows, du disque, des dossiers et des copies.</p>
+      <p><strong>Jetons protégés par Windows.</strong> Les jetons OAuth d’accès et de renouvellement sont conservés dans un coffre local chiffré avec DPAPI, lié à l’utilisateur Windows courant. Le collecteur les utilise sous ce compte pour consulter les fournisseurs et renouveler l’accès. Cette protection ne chiffre pas les documents ni la base de trésorerie.</p>
+      <p><strong>Configuration du client distincte.</strong> Le fichier du client OAuth de bureau reste local et en clair. Il peut contenir le secret du client Google natif ; ce n’est ni le mot de passe du compte ni son jeton d’accès. Le dossier d’authentification et les identifiants du service sont exclus des sauvegardes documentaires ordinaires de l’application.</p>
+      <p>Le consentement s’effectue dans le navigateur sur les pages officielles du fournisseur, avec un retour temporaire vers l’ordinateur. Les appels aux API et les échanges de jetons utilisent HTTPS. Les formulaires de l’application ne demandent pas le mot de passe Google ou Microsoft.</p>
+      <p><strong>Copies et synchronisation.</strong> Windows, OneDrive, Dropbox, un outil de sauvegarde ou un export choisi peuvent copier des fichiers locaux vers un autre support ou le cloud. Le collecteur ne désactive pas ces réglages ; leur périmètre doit être vérifié sur le poste.</p>
+      <p><strong>Pages d’information.</strong> Ces pages statiques ne contiennent aucune donnée financière, aucun jeton ni aucun identifiant technique du client OAuth. Elles ne proposent aucun formulaire, script externe ou outil de mesure d’audience. Leur hébergement peut produire des journaux techniques de consultation, par exemple l’adresse IP, la date et la page demandée, selon les réglages et règles de l’hébergeur.</p>
+    </section>
+    <section class="panel" id="conservation">
+      <h2>4. Conservation</h2>
+      <div class="table-wrap"><table><caption>Conservation appliquée à l’installation</caption><thead><tr><th scope="col">Catégorie</th><th scope="col">Comportement</th></tr></thead><tbody>
+        <tr><td>Documents, textes, index, propositions, données validées et historique</td><td>Aucun effacement automatique global selon l’âge n’est implémenté. Ces éléments restent jusqu’à une suppression organisée sur l’installation et ses copies.</td></tr>
+        <tr><td>Récapitulatifs de collecte</td><td>Certaines listes sont limitées aux 180 derniers contrôles. Cela n’efface pas les documents ni tous les journaux séparés.</td></tr>
+        <tr><td>Instantanés de sauvegarde</td><td>La rotation garde par défaut les 30 derniers instantanés de base et leurs manifestes. Ce nombre n’est pas un délai garanti de 30 jours.</td></tr>
+        <tr><td>Pièces sauvegardées</td><td>Elles sont conservées séparément par empreinte, sans purge automatique lors de la rotation des instantanés. Des pièces peuvent être absentes ; le manifeste indique les limites.</td></tr>
+        <tr><td>Jetons du compte</td><td>Ils restent dans le coffre DPAPI jusqu’à leur retrait. Leur validité dépend du fournisseur et d’une éventuelle révocation. Un refus de renouvellement peut demander une nouvelle autorisation.</td></tr>
+      </tbody></table></div>
+      <p>La suppression d’un document chez le fournisseur ou la révocation d’un accès ne supprime pas automatiquement les copies locales, propositions, données validées ou sauvegardes. L’absence d’un document ne prouve pas un paiement.</p>
+    </section>
+    <section class="panel" id="retrait">
+      <h2>5. Retirer un accès et effacer les copies</h2>
+      <ol>
+        <li><strong>Révoquer l’accès chez le fournisseur.</strong> Pour Google, utiliser les <a href="https://myaccount.google.com/connections" rel="noreferrer">connexions aux applications tierces du compte</a>. Pour Microsoft, utiliser la gestion des autorisations des applications du compte concerné.</li>
+        <li><strong>Arrêter la collecte.</strong> Désactiver les sources et le lancement automatique, y compris sa surveillance, puis arrêter le processus. « Dissocier ce service » retire uniquement le lien avec le navigateur et n’arrête pas, à lui seul, le collecteur.</li>
+        <li><strong>Retirer les jetons locaux.</strong> Le mainteneur peut retirer les entrées de cette application du coffre DPAPI. Il n’existe pas actuellement de bouton de retrait par fournisseur ; retirer ces entrées n’efface pas les documents.</li>
+        <li><strong>Organiser l’effacement.</strong> Définir les données à retirer de la base, des fichiers, états, journaux, sauvegardes, exports, copies de test et dossiers synchronisés. Aucun bouton de purge complète de cet ensemble n’est implémenté.</li>
+      </ol>
+      <p>La suppression d’un fichier local ne garantit pas celle de ses sauvegardes, de la corbeille ou des versions conservées par une synchronisation. Les originaux Google ou Microsoft ne sont pas supprimés par le retrait des copies locales. Pour organiser ces actions, contacter GCC Holding à <a href="mailto:ciryl.coudoux@outlook.com">ciryl.coudoux@outlook.com</a>.</p>
+    </section>
+    <section class="panel" id="contact">
+      <h2>6. Responsable et contact</h2>
+      <p><strong>GCC Holding</strong> est le responsable de cette installation. Pour une question sur les données, une demande d’assistance, de retrait ou d’effacement : <a href="mailto:ciryl.coudoux@outlook.com">ciryl.coudoux@outlook.com</a>.</p>
+      <p>Un changement d’utilisateurs, d’hébergement de l’application, de destinataires ou d’usage des données demande une révision de cette notice. Un nouvel accès à des données doit être présenté et autorisé avant utilisation. La présence de ces pages ne constitue pas une approbation du logiciel par Google ou Microsoft.</p>
+    </section>
+  </main>
+  <footer><div class="wrap"><p>Trésorerie GCC · GCC Holding · Version du 12 octobre 2026.</p><p>Contact : <a href="mailto:ciryl.coudoux@outlook.com">ciryl.coudoux@outlook.com</a></p><p><a href="index.html">Présentation</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions d’utilisation</a></p></div></footer>
+</body>
+</html>
